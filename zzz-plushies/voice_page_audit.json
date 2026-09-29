@@ -1,0 +1,466 @@
+{
+  "anton_ivanov": {
+    "name": "Anton Ivanov",
+    "page": "Anton Ivanov/Voice-Overs",
+    "found": true,
+    "agent": "Anton Ivanov",
+    "text": "Anton! Head of Belobog Industries' construction team, at your service.",
+    "file_override": null
+  },
+  "billy_kid": {
+    "name": "Billy Kid",
+    "page": "Billy Kid/Voice-Overs",
+    "found": true,
+    "agent": "Billy Kid",
+    "text": "By my hand, this endless conflict shall meet its end!",
+    "file_override": null
+  },
+  "cissia": {
+    "name": "Cissia",
+    "page": "Cissia/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "corin_wickes": {
+    "name": "Corin Wickes",
+    "page": "Corin Wickes/Voice-Overs",
+    "found": true,
+    "agent": "Corin Wickes",
+    "text": "Uh... Excuse me... Is there something I can do for you? Anything at all?",
+    "file_override": null
+  },
+  "ellen_joe": {
+    "name": "Ellen Joe",
+    "page": "Ellen Joe/Voice-Overs",
+    "found": true,
+    "agent": "Ellen Joe",
+    "text": "I've been waiting for you, Master.",
+    "file_override": null
+  },
+  "evelyn_chevalier": {
+    "name": "Evelyn Chevalier",
+    "page": "Evelyn Chevalier/Voice-Overs",
+    "found": true,
+    "agent": "Evelyn Chevalier",
+    "text": "I'm Evelyn. Looking forward to a pleasant partnership.",
+    "file_override": null
+  },
+  "asaba_harumasa": {
+    "name": "Asaba Harumasa",
+    "page": "Asaba Harumasa/Voice-Overs",
+    "found": true,
+    "agent": "Asaba Harumasa",
+    "text": "Leave it all to me. You just sit back and worry on my behalf.",
+    "file_override": null
+  },
+  "hugo_vlad": {
+    "name": "Hugo Vlad",
+    "page": "Hugo Vlad/Voice-Overs",
+    "found": true,
+    "agent": "Hugo Vlad",
+    "text": "Take a guess. Heads? Tails? Or something else entirely?",
+    "file_override": null
+  },
+  "nekomiya_mana": {
+    "name": "Nekomiya Mana",
+    "page": "Nekomiya Mana/Voice-Overs",
+    "found": true,
+    "agent": "Nekomiya Mana",
+    "text": "Fine! I guess I'll join you for some fun!",
+    "file_override": null
+  },
+  "orphie_magus": {
+    "name": "Orphie & Magus",
+    "page": "Orphie & Magus/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "seed": {
+    "name": "Seed",
+    "page": "Seed/Voice-Overs",
+    "found": true,
+    "agent": "Seed",
+    "text": "Yoh-hoh~ Obol Squad's heavy weapons specialist, Seed, has arrived~",
+    "file_override": null
+  },
+  "sigrid_de_lazur": {
+    "name": "Sigrid de L’Azur",
+    "page": "Sigrid de L’Azur/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "soldier_0_anby": {
+    "name": "Soldier 0 - Anby",
+    "page": "Soldier 0 - Anby/Voice-Overs",
+    "found": true,
+    "agent": "Soldier 0 - Anby",
+    "text": "Captain Anby, of Silver Squad. Does this new title mean double the pay?",
+    "file_override": null
+  },
+  "soldier_11": {
+    "name": "Soldier 11",
+    "page": "Soldier 11/Voice-Overs",
+    "found": true,
+    "agent": "Soldier 11",
+    "text": "Soldier 11, reporting for duty. Ready for action.",
+    "file_override": null
+  },
+  "ye_shunguang": {
+    "name": "Ye Shunguang",
+    "page": "Ye Shunguang/Voice-Overs",
+    "found": true,
+    "agent": "Ye Shunguang",
+    "text": "Ye Shunguang of Yunkui Summit, heeding your summons!",
+    "file_override": null
+  },
+  "zhu_yuan": {
+    "name": "Zhu Yuan",
+    "page": "Zhu Yuan/Voice-Overs",
+    "found": true,
+    "agent": "Zhu Yuan",
+    "text": "Leader of Public Security's Criminal Investigation Team, Zhu Yuan, standing by.",
+    "file_override": null
+  },
+  "alice_thymefield": {
+    "name": "Alice Thymefield",
+    "page": "Alice Thymefield/Voice-Overs",
+    "found": true,
+    "agent": "Alice Thymefield",
+    "text": "Alice Thymefield. On behalf of the Thymefield Family, I extend my regards to you.",
+    "file_override": null
+  },
+  "aria": {
+    "name": "Aria",
+    "page": "Aria/Voice-Overs",
+    "found": true,
+    "agent": "Aria",
+    "text": "",
+    "file_override": null
+  },
+  "burnice": {
+    "name": "Burnice White",
+    "page": "Burnice White/Voice-Overs",
+    "found": true,
+    "agent": "Burnice White",
+    "text": "Mixologist Burnice, so glad to see ya!",
+    "file_override": null
+  },
+  "grace_howard": {
+    "name": "Grace Howard",
+    "page": "Grace Howard/Voice-Overs",
+    "found": true,
+    "agent": "Grace Howard",
+    "text": "What's up? Need some technical support?",
+    "file_override": null
+  },
+  "jane_doe": {
+    "name": "Jane Doe",
+    "page": "Jane Doe/Voice-Overs",
+    "found": true,
+    "agent": "Jane Doe",
+    "text": "Criminology specialist, Jane. Pleasure to meet you.",
+    "file_override": null
+  },
+  "hoshimi_miyabi": {
+    "name": "Hoshimi Miyabi",
+    "page": "Hoshimi Miyabi/Voice-Overs",
+    "found": true,
+    "agent": "Hoshimi Miyabi",
+    "text": "Greetings. I am Hoshimi Miyabi, Chief of Section 6.",
+    "file_override": null
+  },
+  "piper_wheel": {
+    "name": "Piper Wheel",
+    "page": "Piper Wheel/Voice-Overs",
+    "found": true,
+    "agent": "Piper Wheel",
+    "text": "Heh... What can this little old trucker do for ya'?",
+    "file_override": null
+  },
+  "promeia": {
+    "name": "Promeia",
+    "page": "Promeia/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "remielle_dan": {
+    "name": "Remielle Dan",
+    "page": "Remielle Dan/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "velina": {
+    "name": "Velina",
+    "page": "Velina/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "vivian_banshee": {
+    "name": "Vivian Banshee",
+    "page": "Vivian Banshee/Voice-Overs",
+    "found": true,
+    "agent": "Vivian Banshee",
+    "text": "Let me make this clear in advance. I'm only here for Lord Phaethon.",
+    "file_override": null
+  },
+  "tsukishiro_yanagi": {
+    "name": "Tsukishiro Yanagi",
+    "page": "Tsukishiro Yanagi/Voice-Overs",
+    "found": true,
+    "agent": "Tsukishiro Yanagi",
+    "text": "Hello. I'm Tsukishiro Yanagi, Deputy Chief of Section 6.",
+    "file_override": null
+  },
+  "banyue": {
+    "name": "Banyue",
+    "page": "Banyue/Voice-Overs",
+    "found": true,
+    "agent": "Banyue",
+    "text": "I stand as a barrier, no calamity shall pass. You're safe under my guard.",
+    "file_override": null
+  },
+  "komano_manato": {
+    "name": "Komano Manato",
+    "page": "Komano Manato/Voice-Overs",
+    "found": true,
+    "agent": "Komano Manato",
+    "text": "Need my help? We're all friends, no need to be so formal.",
+    "file_override": null
+  },
+  "starlight_billy": {
+    "name": "Billy Kid",
+    "page": "Billy Kid/Voice-Overs",
+    "found": true,
+    "agent": "Billy Kid",
+    "text": "By my hand, this endless conflict shall meet its end!",
+    "file_override": null
+  },
+  "yidhari": {
+    "name": "Yidhari",
+    "page": "Yidhari Murphy/Voice-Overs",
+    "found": true,
+    "agent": "Yidhari Murphy",
+    "text": "I look forward to the story we're about to write together.",
+    "file_override": null
+  },
+  "yixuan": {
+    "name": "Yixuan",
+    "page": "Yixuan/Voice-Overs",
+    "found": true,
+    "agent": "Yixuan",
+    "text": "I'm the 13th generation High Preceptor of Yunkui Summit, Yixuan.",
+    "file_override": null
+  },
+  "anby_demara": {
+    "name": "Anby Demara",
+    "page": "Anby Demara/Voice-Overs",
+    "found": true,
+    "agent": "Anby Demara",
+    "text": "Anby, of the Cunning Hares, in position.",
+    "file_override": null
+  },
+  "dialyn": {
+    "name": "Dialyn",
+    "page": "Dialyn/Voice-Overs",
+    "found": true,
+    "agent": "Dialyn",
+    "text": "Rep 2493, Dialyn! Happy to assist with your request!",
+    "file_override": null
+  },
+  "ju_fufu": {
+    "name": "Ju Fufu",
+    "page": "Ju Fufu/Voice-Overs",
+    "found": true,
+    "agent": "Ju Fufu",
+    "text": "I'm Ju Fufu, disciple of Yunkui Summit! Yeah, that sounded pretty impressive, right?",
+    "file_override": null
+  },
+  "koleda_belobog": {
+    "name": "Koleda Belobog",
+    "page": "Koleda Belobog/Voice-Overs",
+    "found": true,
+    "agent": "Koleda Belobog",
+    "text": "Hey you! Quit staring at me like I'm a kid!",
+    "file_override": null
+  },
+  "lighter": {
+    "name": "Lighter",
+    "page": "Lighter/Voice-Overs",
+    "found": true,
+    "agent": "Lighter",
+    "text": "Have you heard of the red scarf?",
+    "file_override": null
+  },
+  "von_lycaon": {
+    "name": "Von Lycaon",
+    "page": "Von Lycaon/Voice-Overs",
+    "found": true,
+    "agent": "Von Lycaon",
+    "text": "Master's wish is my most sacred mission.",
+    "file_override": null
+  },
+  "nangong_yu": {
+    "name": "Nangong Yu",
+    "page": "Nangong Yu/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "norma_hollowell": {
+    "name": "Norma Hollowell",
+    "page": "Norma Hollowell/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "pulchra_fellini": {
+    "name": "Pulchra Fellini",
+    "page": "Pulchra Fellini/Voice-Overs",
+    "found": true,
+    "agent": "Pulchra Fellini",
+    "text": "Of course! If the pay is good, why not?",
+    "file_override": null
+  },
+  "qingyi": {
+    "name": "Qingyi",
+    "page": "Qingyi/Voice-Overs",
+    "found": true,
+    "agent": "Qingyi",
+    "text": "Automaton Qingyi. Eager to learn from your wisdom.",
+    "file_override": null
+  },
+  "roxy_ifrita_pryce": {
+    "name": "Roxy Ifrita Pryce",
+    "page": "Roxy Ifrita Pryce/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "trigger": {
+    "name": "Trigger",
+    "page": "Trigger/Voice-Overs",
+    "found": true,
+    "agent": "Trigger",
+    "text": "Trigger, sniper of Obol Squad. Reporting for duty.",
+    "file_override": null
+  },
+  "astra_yao": {
+    "name": "Astra Yao",
+    "page": "Astra Yao/Voice-Overs",
+    "found": true,
+    "agent": "Astra Yao",
+    "text": "I've been recognized. So nice to meet you!",
+    "file_override": null
+  },
+  "lucia": {
+    "name": "Lucia",
+    "page": "Lucia Elowen/Voice-Overs",
+    "found": true,
+    "agent": "Lucia Elowen",
+    "text": "Ready for an adventure in the Hollow? Let's go right now!",
+    "file_override": null
+  },
+  "lucy": {
+    "name": "Lucy",
+    "page": "Luciana de Montefio/Voice-Overs",
+    "found": true,
+    "agent": "Luciana de Montefio",
+    "text": "Esteemed Proxy, good day. You may call me Lady Lucy.",
+    "file_override": null
+  },
+  "nicole_demara": {
+    "name": "Nicole Demara",
+    "page": "Nicole Demara/Voice-Overs",
+    "found": true,
+    "agent": "Nicole Demara",
+    "text": "Got a gig that pays well? Count me in.",
+    "file_override": null
+  },
+  "rina": {
+    "name": "Alexandrina Sebastiane",
+    "page": "Alexandrina Sebastiane/Voice-Overs",
+    "found": true,
+    "agent": "Alexandrina Sebastiane",
+    "text": "<!--",
+    "file_override": null
+  },
+  "soukaku": {
+    "name": "Soukaku",
+    "page": "Soukaku/Voice-Overs",
+    "found": true,
+    "agent": "Soukaku",
+    "text": "Hehehe! Soukaku, reporting in! A pleasure to meet you!",
+    "file_override": null
+  },
+  "sunna": {
+    "name": "Sunna",
+    "page": "Sunna/Voice-Overs",
+    "found": false,
+    "agent": null,
+    "text": null,
+    "file_override": null
+  },
+  "ukinami_yuzuha": {
+    "name": "Ukinami Yuzuha",
+    "page": "Ukinami Yuzuha/Voice-Overs",
+    "found": true,
+    "agent": "Ukinami Yuzuha",
+    "text": "Hi there! I'm Ukinami Yuzuha!",
+    "file_override": null
+  },
+  "ben_bigger": {
+    "name": "Ben Bigger",
+    "page": "Ben Bigger/Voice-Overs",
+    "found": true,
+    "agent": "Ben Bigger",
+    "text": "Just call me Ben. Or Big Ben. I'll protect everyone.",
+    "file_override": null
+  },
+  "caesar_king": {
+    "name": "Caesar King",
+    "page": "Caesar King/Voice-Overs",
+    "found": true,
+    "agent": "Caesar King",
+    "text": "I'm Caesar. The leader of the Sons of Calydon.",
+    "file_override": null
+  },
+  "pan_yinhu": {
+    "name": "Pan Yinhu",
+    "page": "Pan Yinhu/Voice-Overs",
+    "found": true,
+    "agent": "Pan Yinhu",
+    "text": "Yunkui Summit disciple, Pan Yinhu, is honored to meet you.",
+    "file_override": null
+  },
+  "seth_lowell": {
+    "name": "Seth Lowell",
+    "page": "Seth Lowell/Voice-Overs",
+    "found": true,
+    "agent": "Seth Lowell",
+    "text": "Officer Seth, Lynx Thiren. Nice to meet you!",
+    "file_override": null
+  },
+  "zhao": {
+    "name": "Zhao",
+    "page": "Zhao/Voice-Overs",
+    "found": true,
+    "agent": "Zhao",
+    "text": "Pleasure doing business. I'm Zhao from Krampus. Just call me Xiao'Zhao.",
+    "file_override": null
+  }
+}

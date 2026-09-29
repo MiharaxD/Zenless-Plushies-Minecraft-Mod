@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "zzzplushies:choice_token"
+  },
+  "result": "zzzplushies:nekomiya_mana",
+  "count": 1
+}

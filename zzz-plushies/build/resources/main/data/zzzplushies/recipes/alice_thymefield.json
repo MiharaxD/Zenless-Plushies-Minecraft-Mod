@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "zzzplushies:plush_base"
+  },
+  "result": "zzzplushies:alice_thymefield",
+  "count": 1
+}

@@ -1,0 +1,18 @@
+{
+  "preview-a-rank-plush-1.8.0.png": {
+    "bytes": 41431,
+    "sha256": "6a881565742dfd260eaa8170c8cc23145b2fdcbc75e71eafe874db4e1be2d189"
+  },
+  "preview-ab-rewards-1.8.0.png": {
+    "bytes": 41898,
+    "sha256": "571e92d965ea6503a621e7f200fd7b59eb73ce8ada978463b287c17901471c86"
+  },
+  "source-1.8.0.zip": {
+    "bytes": 9388871,
+    "sha256": "b21165546ca802b0cbffd9d911f2054974e2220694b08d8ea529f97ef6baa980"
+  },
+  "zzz-plushies-forge-1.20.1-1.8.0.jar": {
+    "bytes": 9332974,
+    "sha256": "de5954218bc9168ed2b2a96aace58bf0ff9c44863358e352d108432a8f0e51a2"
+  }
+}

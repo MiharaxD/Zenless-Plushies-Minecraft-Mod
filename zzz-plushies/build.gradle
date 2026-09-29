@@ -1,0 +1,39 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+
+group = 'dev.yuri.zzzplushies'
+version = '1.8.1'
+base { archivesName = 'zzz-plushies-forge-1.20.1' }
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    runs {
+        client {
+            workingDirectory project.file('run')
+            mods {
+                zzzplushies { source sourceSets.main }
+            }
+        }
+        server {
+            workingDirectory project.file('run-server')
+            mods {
+                zzzplushies { source sourceSets.main }
+            }
+        }
+    }
+}
+
+repositories { mavenCentral() }
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar) {
+    from('SKIN_SOURCES.md')
+    finalizedBy 'reobfJar'
+}

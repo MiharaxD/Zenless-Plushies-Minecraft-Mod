@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "zzzplushies:choice_token"
+  },
+  "result": "zzzplushies:soldier_0_anby",
+  "count": 1
+}

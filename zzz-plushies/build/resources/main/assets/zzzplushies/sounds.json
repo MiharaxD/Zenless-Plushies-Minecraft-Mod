@@ -1,0 +1,425 @@
+{
+  "gacha_spin": {
+    "sounds": [
+      {
+        "name": "zzzplushies:gacha_spin",
+        "stream": true
+      }
+    ]
+  },
+  "voice_alice_thymefield": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/alice_thymefield",
+        "stream": true
+      }
+    ]
+  },
+  "voice_anby_demara": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/anby_demara",
+        "stream": true
+      }
+    ]
+  },
+  "voice_anton_ivanov": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/anton_ivanov",
+        "stream": true
+      }
+    ]
+  },
+  "voice_asaba_harumasa": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/asaba_harumasa",
+        "stream": true
+      }
+    ]
+  },
+  "voice_astra_yao": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/astra_yao",
+        "stream": true
+      }
+    ]
+  },
+  "voice_banyue": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/banyue",
+        "stream": true
+      }
+    ]
+  },
+  "voice_ben_bigger": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/ben_bigger",
+        "stream": true
+      }
+    ]
+  },
+  "voice_billy_kid": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/billy_kid",
+        "stream": true
+      }
+    ]
+  },
+  "voice_burnice": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/burnice",
+        "stream": true
+      }
+    ]
+  },
+  "voice_caesar_king": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/caesar_king",
+        "stream": true
+      }
+    ]
+  },
+  "voice_corin_wickes": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/corin_wickes",
+        "stream": true
+      }
+    ]
+  },
+  "voice_dialyn": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/dialyn",
+        "stream": true
+      }
+    ]
+  },
+  "voice_ellen_joe": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/ellen_joe",
+        "stream": true
+      }
+    ]
+  },
+  "voice_evelyn_chevalier": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/evelyn_chevalier",
+        "stream": true
+      }
+    ]
+  },
+  "voice_grace_howard": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/grace_howard",
+        "stream": true
+      }
+    ]
+  },
+  "voice_hoshimi_miyabi": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/hoshimi_miyabi",
+        "stream": true
+      }
+    ]
+  },
+  "voice_hugo_vlad": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/hugo_vlad",
+        "stream": true
+      }
+    ]
+  },
+  "voice_jane_doe": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/jane_doe",
+        "stream": true
+      }
+    ]
+  },
+  "voice_ju_fufu": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/ju_fufu",
+        "stream": true
+      }
+    ]
+  },
+  "voice_koleda_belobog": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/koleda_belobog",
+        "stream": true
+      }
+    ]
+  },
+  "voice_komano_manato": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/komano_manato",
+        "stream": true
+      }
+    ]
+  },
+  "voice_lighter": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/lighter",
+        "stream": true
+      }
+    ]
+  },
+  "voice_lucia": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/lucia",
+        "stream": true
+      }
+    ]
+  },
+  "voice_lucy": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/lucy",
+        "stream": true
+      }
+    ]
+  },
+  "voice_nekomiya_mana": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/nekomiya_mana",
+        "stream": true
+      }
+    ]
+  },
+  "voice_nicole_demara": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/nicole_demara",
+        "stream": true
+      }
+    ]
+  },
+  "voice_orphie_magus": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/orphie_magus",
+        "stream": true
+      }
+    ]
+  },
+  "voice_pan_yinhu": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/pan_yinhu",
+        "stream": true
+      }
+    ]
+  },
+  "voice_piper_wheel": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/piper_wheel",
+        "stream": true
+      }
+    ]
+  },
+  "voice_pulchra_fellini": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/pulchra_fellini",
+        "stream": true
+      }
+    ]
+  },
+  "voice_qingyi": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/qingyi",
+        "stream": true
+      }
+    ]
+  },
+  "voice_rina": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/rina",
+        "stream": true
+      }
+    ]
+  },
+  "voice_seed": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/seed",
+        "stream": true
+      }
+    ]
+  },
+  "voice_seth_lowell": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/seth_lowell",
+        "stream": true
+      }
+    ]
+  },
+  "voice_soldier_0_anby": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/soldier_0_anby",
+        "stream": true
+      }
+    ]
+  },
+  "voice_soldier_11": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/soldier_11",
+        "stream": true
+      }
+    ]
+  },
+  "voice_soukaku": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/soukaku",
+        "stream": true
+      }
+    ]
+  },
+  "voice_starlight_billy": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/starlight_billy",
+        "stream": true
+      }
+    ]
+  },
+  "voice_trigger": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/trigger",
+        "stream": true
+      }
+    ]
+  },
+  "voice_tsukishiro_yanagi": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/tsukishiro_yanagi",
+        "stream": true
+      }
+    ]
+  },
+  "voice_ukinami_yuzuha": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/ukinami_yuzuha",
+        "stream": true
+      }
+    ]
+  },
+  "voice_vivian_banshee": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/vivian_banshee",
+        "stream": true
+      }
+    ]
+  },
+  "voice_von_lycaon": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/von_lycaon",
+        "stream": true
+      }
+    ]
+  },
+  "voice_ye_shunguang": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/ye_shunguang",
+        "stream": true
+      }
+    ]
+  },
+  "voice_yidhari": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/yidhari",
+        "stream": true
+      }
+    ]
+  },
+  "voice_yixuan": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/yixuan",
+        "stream": true
+      }
+    ]
+  },
+  "voice_zhao": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/zhao",
+        "stream": true
+      }
+    ]
+  },
+  "voice_zhu_yuan": {
+    "sounds": [
+      {
+        "name": "zzzplushies:voices/zhu_yuan",
+        "stream": true
+      }
+    ]
+  },
+  "channel_static": {
+    "sounds": [
+      {
+        "name": "zzzplushies:channel_static"
+      }
+    ]
+  },
+  "gacha_ab": {
+    "sounds": [
+      {
+        "name": "zzzplushies:gacha_ab",
+        "stream": true
+      }
+    ]
+  },
+  "gacha_vocal": {
+    "sounds": [
+      {
+        "name": "zzzplushies:gacha_vocal",
+        "stream": true
+      }
+    ]
+  },
+  "gacha_reveal": {
+    "sounds": [
+      {
+        "name": "zzzplushies:gacha_reveal",
+        "stream": false
+      }
+    ]
+  }
+}

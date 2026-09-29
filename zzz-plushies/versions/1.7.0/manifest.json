@@ -1,0 +1,22 @@
+{
+  "preview-s-focus-1.7.0.png": {
+    "bytes": 67710,
+    "sha256": "f18bb68ad153d02d3add20361994cb015b9b63410dff272be7a1fd9394dbc294"
+  },
+  "preview-ten-rewards-1.7.0.png": {
+    "bytes": 56689,
+    "sha256": "9285d55cfe95a2e6825861378714425f6dfaba18c2a5e5d8c12c87fa8e35d7ec"
+  },
+  "preview-ten-tvs-1.7.0.png": {
+    "bytes": 61029,
+    "sha256": "8e1c64c08d3eaf963ec94bab2edb5b7a1553d01e33db5c61e8df49398e000f6d"
+  },
+  "source-1.7.0.zip": {
+    "bytes": 8149322,
+    "sha256": "96b69038f90c527fa168bbb8b7057ecd75a755dbd34ac6db1b3deaa687d6e197"
+  },
+  "zzz-plushies-forge-1.20.1-1.7.0.jar": {
+    "bytes": 8093660,
+    "sha256": "b46acfbfe2607e61dd160c7e1165da3cf3d2a80fc7057a51e0d16f7e9d8969d9"
+  }
+}

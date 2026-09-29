@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "zzzplushies:block/gacha_machine",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "zzzplushies:block/gacha_machine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "zzzplushies:block/gacha_machine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "zzzplushies:block/gacha_machine",
+      "y": 270
+    }
+  }
+}

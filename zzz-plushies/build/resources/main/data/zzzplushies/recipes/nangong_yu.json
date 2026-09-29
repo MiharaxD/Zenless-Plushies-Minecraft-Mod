@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "zzzplushies:plush_base"
+  },
+  "result": "zzzplushies:nangong_yu",
+  "count": 1
+}

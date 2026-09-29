@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "zzzplushies:plush_base"
+  },
+  "result": "zzzplushies:sigrid_de_lazur",
+  "count": 1
+}
