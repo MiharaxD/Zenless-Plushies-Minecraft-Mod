@@ -102,8 +102,12 @@ def main() -> None:
                 "firstperson_righthand": {"rotation": [0, 45, 0], "scale": [0.9, 0.9, 0.9]},
             },
         })
+        write_json(RESOURCES / "assets" / NAMESPACE / "models" / "block" / f"{agent_id}.json", {
+            "parent": f"{NAMESPACE}:block/empty",
+            "textures": {"particle": f"{NAMESPACE}:item/{agent_id}"},
+        })
         write_json(RESOURCES / "assets" / NAMESPACE / "blockstates" / f"{agent_id}.json", {
-            "variants": {f"facing={direction}": {"model": f"{NAMESPACE}:block/empty"}
+            "variants": {f"facing={direction}": {"model": f"{NAMESPACE}:block/{agent_id}"}
                          for direction in ("north", "east", "south", "west")},
         })
         write_json(RESOURCES / "data" / NAMESPACE / "loot_tables" / "blocks" / f"{agent_id}.json", {

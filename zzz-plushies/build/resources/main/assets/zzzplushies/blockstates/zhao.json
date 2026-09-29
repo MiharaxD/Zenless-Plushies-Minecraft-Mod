@@ -1,16 +1,16 @@
 {
   "variants": {
     "facing=north": {
-      "model": "zzzplushies:block/empty"
+      "model": "zzzplushies:block/zhao"
     },
     "facing=east": {
-      "model": "zzzplushies:block/empty"
+      "model": "zzzplushies:block/zhao"
     },
     "facing=south": {
-      "model": "zzzplushies:block/empty"
+      "model": "zzzplushies:block/zhao"
     },
     "facing=west": {
-      "model": "zzzplushies:block/empty"
+      "model": "zzzplushies:block/zhao"
     }
   }
 }

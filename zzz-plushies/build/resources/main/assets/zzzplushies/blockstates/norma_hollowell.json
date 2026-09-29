@@ -1,16 +1,16 @@
 {
   "variants": {
     "facing=north": {
-      "model": "zzzplushies:block/empty"
+      "model": "zzzplushies:block/norma_hollowell"
     },
     "facing=east": {
-      "model": "zzzplushies:block/empty"
+      "model": "zzzplushies:block/norma_hollowell"
     },
     "facing=south": {
-      "model": "zzzplushies:block/empty"
+      "model": "zzzplushies:block/norma_hollowell"
     },
     "facing=west": {
-      "model": "zzzplushies:block/empty"
+      "model": "zzzplushies:block/norma_hollowell"
     }
   }
 }

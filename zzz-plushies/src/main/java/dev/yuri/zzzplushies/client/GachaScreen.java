@@ -1,6 +1,7 @@
 package dev.yuri.zzzplushies.client;
 
 import dev.yuri.zzzplushies.PlushCatalog;
+import dev.yuri.zzzplushies.ZzzPlushies;
 import dev.yuri.zzzplushies.gacha.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -14,50 +15,158 @@ import net.minecraftforge.registries.ForgeRegistries;
 import java.util.Locale;
 
 public final class GachaScreen extends AbstractContainerScreen<GachaMenu> {
-    private Button single, ten;
+    private Button single, ten, prev, next;
+
     public GachaScreen(GachaMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title);
-        imageWidth = 240;
-        imageHeight = 166;
     }
+
+    // ---- layout (tudo calculado a partir do tamanho da tela: a UI ocupa a tela toda, estilo banner) ----
+    private static final int TOP_BAR = 26, BOTTOM_BAR = 48;
+    private int stageTop() { return TOP_BAR; }
+    private int stageBottom() { return height - BOTTOM_BAR; }
+    private float mainScale() {
+        float byH = (stageBottom() - stageTop()) * 0.62F / 16F;
+        float byW = width * 0.26F / 16F;
+        return Math.max(3F, Math.min(byH, byW));
+    }
+    private int charCx() { return Math.round(width * 0.66F); }
+
     @Override protected void init() {
+        imageWidth = width;
+        imageHeight = height;
         super.init();
-        addRenderableWidget(Button.builder(Component.literal("◀"), b -> press(1))
-                .bounds(leftPos + 20, topPos + 46, 25, 20).build());
-        addRenderableWidget(Button.builder(Component.literal("▶"), b -> press(2))
-                .bounds(leftPos + 195, topPos + 46, 25, 20).build());
-        single = addRenderableWidget(Button.builder(Component.translatable("button.zzzplushies.spin"), b -> press(0))
-                .bounds(leftPos + 12, topPos + 126, 104, 24).build());
-        ten = addRenderableWidget(Button.builder(Component.translatable("button.zzzplushies.spin_ten"), b -> press(3))
-                .bounds(leftPos + 124, topPos + 126, 104, 24).build());
+        int cx = charCx();
+        int arrowY = (stageTop() + stageBottom()) / 2 - 10;
+        int reach = Math.round(mainScale() * 16 * 1.75F);
+        prev = addRenderableWidget(Button.builder(Component.literal("\u25C0"), b -> press(1))
+                .bounds(Math.max(width * 4 / 10, cx - reach - 12), arrowY, 24, 20).build());
+        next = addRenderableWidget(Button.builder(Component.literal("\u25B6"), b -> press(2))
+                .bounds(Math.min(width - 36, cx + reach - 12), arrowY, 24, 20).build());
+        int by = height - BOTTOM_BAR + 12;
+        int bw = Math.min(120, Math.max(80, (width - 60) / 5));
+        int xTen = width - 16 - bw;
+        int xOne = xTen - 40 - bw;
+        single = addRenderableWidget(Button.builder(Component.translatable("button.zzzplushies.spin_short"), b -> press(0))
+                .bounds(xOne, by, bw, 24).build());
+        ten = addRenderableWidget(Button.builder(Component.translatable("button.zzzplushies.spin_ten_short"), b -> press(3))
+                .bounds(xTen, by, bw, 24).build());
         updateButtons();
     }
     @Override protected void containerTick() { super.containerTick(); updateButtons(); }
     private void updateButtons() {
-        single.active = !GachaMusic.isRevealing() && menu.tapes() >= 1;
-        ten.active = !GachaMusic.isRevealing() && menu.tapes() >= 10;
+        boolean idle = !GachaMusic.isRevealing();
+        single.active = idle && menu.tapes() >= 1;
+        ten.active = idle && menu.tapes() >= 10;
+        prev.active = idle;
+        next.active = idle;
     }
     private void press(int id) {
         if (!GachaMusic.isRevealing() && minecraft != null && minecraft.gameMode != null)
             minecraft.gameMode.handleInventoryButtonClick(menu.containerId, id);
     }
+
+    // ---- helpers de visual "minecraft": painel chanfrado ----
+    private static void bevel(GuiGraphics g, int x, int y, int w, int h, int base, int light, int dark) {
+        g.fill(x, y, x + w, y + h, 0xFF000000);
+        g.fill(x + 1, y + 1, x + w - 1, y + h - 1, base);
+        g.fill(x + 1, y + 1, x + w - 1, y + 2, light);
+        g.fill(x + 1, y + 1, x + 2, y + h - 1, light);
+        g.fill(x + 1, y + h - 2, x + w - 1, y + h - 1, dark);
+        g.fill(x + w - 2, y + 1, x + w - 1, y + h - 1, dark);
+    }
+    private static void panel(GuiGraphics g, int x, int y, int w, int h) {
+        bevel(g, x, y, w, h, 0xFF2B2B2B, 0xFF4A4A4A, 0xFF161616);
+    }
+    private ItemStack plushAt(int offset) {
+        int len = PlushCatalog.IDS.length;
+        String id = PlushCatalog.IDS[Math.floorMod(menu.selected() + offset, len)];
+        return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("zzzplushies", id)));
+    }
+
     @Override protected void renderBg(GuiGraphics g, float partialTick, int mouseX, int mouseY) {
-        g.fill(leftPos, topPos, leftPos + imageWidth, topPos + imageHeight, 0xFF111725);
-        g.fill(leftPos + 3, topPos + 3, leftPos + imageWidth - 3, topPos + imageHeight - 3, 0xFF27334B);
-        g.fill(leftPos + 50, topPos + 30, leftPos + 190, topPos + 84, 0xFF111725);
-        String id = PlushCatalog.IDS[Math.floorMod(menu.selected(), PlushCatalog.IDS.length)];
-        ItemStack plush = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("zzzplushies", id)));
-        g.renderItem(plush, leftPos + 112, topPos + 37);
-        g.drawCenteredString(font, plush.getHoverName(), leftPos + 120, topPos + 67, 0xFFF5E7CE);
+        // fundo estilo banner (laranja escuro) com listras verticais
+        g.fillGradient(0, 0, width, height, 0xFF5A3410, 0xFF160D05);
+        for (int x = -(int) (System.currentTimeMillis() / 60 % 48); x < width; x += 48)
+            g.fill(x, 0, x + 18, height, 0x14000000);
+
+        int top = stageTop(), bottom = stageBottom();
+        float s = mainScale();
+        int cx = charCx();
+        int baseY = bottom - 34;
+
+        // plush vizinhos (menores, atras) + plush selecionado (grande, na frente)
+        drawItem(g, plushAt(-1), cx - Math.round(s * 16 * 1.3F), baseY - Math.round(s * 16 * 0.32F), s * 0.62F);
+        drawItem(g, plushAt(1), cx + Math.round(s * 16 * 1.3F), baseY - Math.round(s * 16 * 0.32F), s * 0.62F);
+        ItemStack plush = plushAt(0);
+        float bob = (float) Math.sin((GachaMusic.ticks() + partialTick) / 14F) * 2F;
+        drawItem(g, plush, cx, baseY - Math.round(s * 16 * 0.5F) + Math.round(bob), s);
+
+        // etiqueta do personagem: [S] Nome
+        String name = plush.getHoverName().getString();
+        int tw = font.width(name);
+        int pw = Math.max(96, tw + 46), ph = 24;
+        int px = cx - pw / 2, py = bottom - 30;
+        panel(g, px, py, pw, ph);
+        bevel(g, px + 4, py + 4, 16, 16, 0xFFE0A800, 0xFFFFE27A, 0xFF8A6800);
+        g.drawCenteredString(font, "S", px + 12, py + 8, 0xFF1A1200);
+        g.drawString(font, name, px + 26, py + 8, 0xFFFFFFFF, true);
+
+        // barra superior
+        g.fill(0, 0, width, TOP_BAR, 0xFF0C0C0C);
+        g.fill(0, TOP_BAR, width, TOP_BAR + 1, 0xFF6B4A18);
+        g.drawString(font, title, 12, 9, 0xFFFFAA00, true);
+        // contador de fitas (canto superior direito)
+        String tapes = String.format(Locale.ROOT, "%08d", menu.tapes());
+        int boxW = font.width(tapes) + 34;
+        int bx = width - boxW - 10;
+        bevel(g, bx, 4, boxW, 18, 0xFF1C1C1C, 0xFF303030, 0xFF0A0A0A);
+        g.renderItem(new ItemStack(ZzzPlushies.MASTER_TAPE.get()), bx + 3, 5);
+        g.drawString(font, tapes, bx + 24, 9, 0xFFFFFFFF, false);
+
+        // coluna esquerda: titulo do banner + descricao + status
+        int colX = 16, colW = Math.min(width * 4 / 10 - 24, 260);
+        float ts = 1.7F;
+        var lines = font.split(plush.getHoverName(), Math.max(40, (int) (colW / ts)));
+        int y = top + 20;
+        g.pose().pushPose();
+        g.pose().translate(colX, y, 0);
+        g.pose().scale(ts, ts, 1);
+        for (int i = 0; i < Math.min(2, lines.size()); i++) g.drawString(font, lines.get(i), 0, i * 11, 0xFFFFD44F, true);
+        g.pose().popPose();
+        y += Math.min(2, lines.size()) * 19 + 8;
+        g.drawString(font, Component.translatable("gui.zzzplushies.banner_limited"), colX, y, 0xFFFFFFFF, true);
+        y += 14;
+        for (var l : font.split(Component.translatable("gui.zzzplushies.banner_desc"), colW)) {
+            g.drawString(font, l, colX, y, 0xFFE8D9BF, true);
+            y += 10;
+        }
+
+        // status embaixo a esquerda (estilo "Times: 90 S-Rank guaranteed")
+        int hard = GachaOdds.HARD_PITY;
+        int sy = bottom - 62;
+        drawChip(g, colX, sy, Component.translatable("gui.zzzplushies.pity", menu.pity(), hard), 0xFFFFD44F, colW);
+        drawChip(g, colX, sy + 16, Component.translatable("gui.zzzplushies.losses", menu.losses(), 2), 0xFFF5C6C6, colW);
+        drawChip(g, colX, sy + 32, Component.translatable("gui.zzzplushies.chance",
+                String.format(Locale.ROOT, "%.2f", 100 * GachaOdds.sChance(menu.pity()))), 0xFFFFFFFF, colW);
+
+        // barra inferior com fitas por botao (x1 / x10)
+        g.fill(0, bottom, width, height, 0xFF0C0C0C);
+        g.fill(0, bottom, width, bottom + 1, 0xFF6B4A18);
+        drawCost(g, single, 1);
+        drawCost(g, ten, 10);
     }
-    @Override protected void renderLabels(GuiGraphics g, int x, int y) {
-        g.drawCenteredString(font, title, imageWidth / 2, 12, 0xFFF5E7CE);
-        g.drawString(font, Component.translatable("gui.zzzplushies.tapes", menu.tapes()), 12, 91, 0xFFFFFF, false);
-        g.drawString(font, Component.translatable("gui.zzzplushies.pity", menu.pity(), GachaOdds.HARD_PITY), 123, 91, 0xFFFFFF, false);
-        g.drawString(font, Component.translatable("gui.zzzplushies.losses", menu.losses(), 2), 12, 102, 0xF5C6C6, false);
-        g.drawString(font, Component.translatable("gui.zzzplushies.chance",
-                String.format(Locale.ROOT, "%.2f", 100 * GachaOdds.sChance(menu.pity()))), 12, 113, 0xFFD44F, false);
+    private void drawChip(GuiGraphics g, int x, int y, Component text, int color, int maxW) {
+        int w = Math.min(maxW, font.width(text) + 14);
+        bevel(g, x, y, w, 14, 0xFF1C1C1C, 0xFF303030, 0xFF0A0A0A);
+        g.drawString(font, text, x + 7, y + 3, color, false);
     }
+    private void drawCost(GuiGraphics g, Button b, int n) {
+        int x = b.getX() - 34, y = b.getY() + 4;
+        g.renderItem(new ItemStack(ZzzPlushies.MASTER_TAPE.get()), x, y);
+        g.drawString(font, "\u00D7" + n, x + 17, y + 5, b.active ? 0xFFFFFFFF : 0xFF777777, true);
+    }
+    @Override protected void renderLabels(GuiGraphics g, int x, int y) {}
     @Override public void render(GuiGraphics g, int mouseX, int mouseY, float partialTick) {
         renderBackground(g);
         super.render(g, mouseX, mouseY, partialTick);

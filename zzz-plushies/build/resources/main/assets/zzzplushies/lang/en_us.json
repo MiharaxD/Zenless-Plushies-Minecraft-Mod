@@ -81,5 +81,9 @@
   "gui.zzzplushies.rewards": "REWARDS",
   "gui.zzzplushies.click_continue": "Click to reveal  •  Enter / Space",
   "gui.zzzplushies.click_close": "Click to continue",
-  "gui.zzzplushies.voucher": "Plush Choice Voucher received!"
+  "gui.zzzplushies.voucher": "Plush Choice Voucher received!",
+  "button.zzzplushies.spin_short": "Single Pull",
+  "button.zzzplushies.spin_ten_short": "10 Pulls",
+  "gui.zzzplushies.banner_limited": "Rate-Up Banner",
+  "gui.zzzplushies.banner_desc": "Boosted odds for your selected plush! Use the arrows to pick your S-rank target."
 }

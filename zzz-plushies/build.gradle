@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'dev.yuri.zzzplushies'
-version = '1.8.1'
+version = '1.9.2'
 base { archivesName = 'zzz-plushies-forge-1.20.1' }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)

@@ -1,6 +1,6 @@
 # ZZZ Plushies: índice técnico
 
-Estado documentado: **1.8.1**, em 29/09/2026. A raiz do projeto é a pasta `zzz-plushies` que contém este documento em `docs/`; Forge **1.20.1**, Java **17**, namespace `zzzplushies`. Verifique `build.gradle` e `mods.toml` ao iniciar uma nova versão. A pasta irmã `../assets/zzz-plushie-skins/` contém as skins originais necessárias ao gerador.
+Estado documentado: **1.9.2**, em 29/09/2026. A raiz do projeto é a pasta `zzz-plushies` que contém este documento em `docs/`; Forge **1.20.1**, Java **17**, namespace `zzzplushies`. Verifique `build.gradle` e `mods.toml` ao iniciar uma nova versão. A pasta irmã `../assets/zzz-plushie-skins/` contém as skins originais necessárias ao gerador.
 
 ## Leia só o assunto do pedido
 

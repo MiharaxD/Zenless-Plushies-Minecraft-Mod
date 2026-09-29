@@ -1,0 +1,6 @@
+{
+  "parent": "zzzplushies:block/empty",
+  "textures": {
+    "particle": "zzzplushies:item/soldier_0_anby"
+  }
+}

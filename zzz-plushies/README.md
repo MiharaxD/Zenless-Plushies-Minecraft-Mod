@@ -9,7 +9,19 @@ In survival, craft four **Plush Bases** with one white wool surrounded by four s
 The 58 currently selected agents are listed with original skin artists and links in [SKIN_SOURCES.md](SKIN_SOURCES.md). Pyrois and Claret Flint need identifiable source skins before they can be added. Roxy is included in advance of her September 30, 2026 release. NameMC does not identify the Starlight Billy skin by name; verify that visual before distributing the mod.
 
 
-## Current version: 1.8.1
+## Current version: 1.9.2
+
+Fixed pink missing-texture particles when breaking plushes; each plush now uses its character icon for fragments.
+
+### Version 1.9.1
+
+Tela da TV ampliada até a borda interna da moldura (21×14 unidades). Vídeo preenche a superfície sem faixas laterais adicionadas.
+
+## Version 1.9.0
+
+Gacha machine: revised user CRT model, two-block placement, looping Bangboo video and supplied banner UI. See docs/RETRO_TV.md.
+
+### Version 1.8.1
 
 Every character plush now gets its own animated focus screen when revealed. S plushes appear first, followed by A plushes, each in its rank color; only character rewards play their agent voice, and only while their focus is on screen. The music keeps playing from its current position as each plush enters focus, without restarting or cutting off. It stops when the player advances to the final reward cards. Item rewards still go straight to the reward cards. The 1.8.0 release remains preserved in `versions/1.8.0/`.
 

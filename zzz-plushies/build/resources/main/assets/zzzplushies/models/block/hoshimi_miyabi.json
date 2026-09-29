@@ -1,0 +1,6 @@
+{
+  "parent": "zzzplushies:block/empty",
+  "textures": {
+    "particle": "zzzplushies:item/hoshimi_miyabi"
+  }
+}

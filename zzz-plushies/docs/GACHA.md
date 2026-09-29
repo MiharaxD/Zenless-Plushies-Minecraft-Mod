@@ -1,4 +1,4 @@
-# Gacha: regras e fluxo atual (1.8.1)
+# Gacha: regras e fluxo atual (1.9.0)
 
 ## Autoridade e dados
 
@@ -24,3 +24,8 @@ No começo do giro, se o lote contém S, toca `gacha_spin` (Golden Sign); caso c
 ## Fitas em baús
 
 `TapeChestLootModifier.java`, `data/forge/loot_modifiers/global_loot_modifiers.json` e `data/zzzplushies/loot_modifiers/tape_chests.json` aplicam um Forge Global Loot Modifier em loot tables cujo caminho começa com `chests/`: **50%** de chance de adicionar **1–3 fitas**. A integração é por tabela de loot, sem dependência direta de Lootr ou LootJS; confira a tabela e as alterações do pack ao investigar incompatibilidades.
+
+
+## Interface 1.9.0
+
+GachaScreen.java foi substituída pela UI de banner fornecida pelo usuário. Quatro traduções adicionadas em en_us/pt_br. GachaMusic mantém música contínua e vozes somente no foco. TV e vídeo descritos em RETRO_TV.md.

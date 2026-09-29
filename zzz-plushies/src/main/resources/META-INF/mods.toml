@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="zzzplushies"
-version="1.8.1"
+version="1.9.2"
 displayName="ZZZ Plushies"
 authors="Yuri"
 description='''Decorative Zenless Zone Zero agent plushies for Forge 1.20.1. Skin authors are credited in SKIN_SOURCES.md.'''

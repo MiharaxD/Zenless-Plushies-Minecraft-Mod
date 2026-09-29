@@ -1,0 +1,6 @@
+{
+  "parent": "zzzplushies:block/empty",
+  "textures": {
+    "particle": "zzzplushies:item/alice_thymefield"
+  }
+}

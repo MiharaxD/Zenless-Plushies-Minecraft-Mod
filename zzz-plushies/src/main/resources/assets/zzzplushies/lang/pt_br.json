@@ -81,5 +81,9 @@
   "gui.zzzplushies.rewards": "RECOMPENSAS",
   "gui.zzzplushies.click_continue": "Clique para revelar  •  Enter / Espaço",
   "gui.zzzplushies.click_close": "Clique para continuar",
-  "gui.zzzplushies.voucher": "Vale de escolha de plush recebido!"
+  "gui.zzzplushies.voucher": "Vale de escolha de plush recebido!",
+  "button.zzzplushies.spin_short": "1 Tiro",
+  "button.zzzplushies.spin_ten_short": "10 Tiros",
+  "gui.zzzplushies.banner_limited": "Banner de Chance Aumentada",
+  "gui.zzzplushies.banner_desc": "Chance aumentada pro plush selecionado! Use as setas pra escolher seu alvo S."
 }

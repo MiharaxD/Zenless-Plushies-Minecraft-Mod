@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "zzzplushies:block/tv_retro_zzz"
+  },
+  "elements": []
+}
